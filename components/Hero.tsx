@@ -3,48 +3,19 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      padding: '80px 20px',
-      textAlign: 'center',
-      color: 'white',
-      minHeight: '500px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }}>
-      <div style={{
-        maxWidth: '700px'
-      }}>
-        <h1 style={{
-          fontSize: '48px',
-          fontWeight: 'bold',
-          marginBottom: '16px',
-          lineHeight: '1.2'
-        }}>
+    <section className="bg-gradient-to-br from-[#667eea] to-[#764ba2] py-20 px-5 text-center text-white min-h-[500px] flex items-center justify-center">
+      <div className="max-w-[700px]">
+        <h1 className="text-5xl font-bold mb-4 leading-tight">
           Bouw Sneller met AI
         </h1>
-        <p style={{
-          fontSize: '20px',
-          marginBottom: '32px',
-          opacity: '0.9',
-          lineHeight: '1.6'
-        }}>
+        <p className="text-xl mb-8 opacity-90 leading-relaxed">
           Ontdek hoe je met Cursor en Next.js in minuten een professionele
           website bouwt. Van idee tot deployment in no-time.
         </p>
-        <Link href="/about" style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '8px',
-          backgroundColor: 'white',
-          color: '#764ba2',
-          padding: '14px 28px',
-          borderRadius: '9999px',
-          fontWeight: '600',
-          fontSize: '16px',
-          textDecoration: 'none'
-        }}>
+        <Link
+          href="/about"
+          className="inline-flex items-center gap-2 bg-white text-[#764ba2] py-3.5 px-7 rounded-full font-semibold text-base no-underline hover:bg-gray-100 transition-colors"
+        >
           Meer Weten <ArrowRight size={18} />
         </Link>
       </div>
