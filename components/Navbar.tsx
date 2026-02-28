@@ -7,51 +7,16 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav style={{
-      backgroundColor: 'white',
-      borderBottom: '1px solid #e5e7eb',
-      padding: '0 20px',
-      position: 'sticky',
-      top: '0',
-      zIndex: '50'
-    }}>
-      <div style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: '64px'
-      }}>
-        <Link href="/" style={{
-          fontSize: '20px',
-          fontWeight: 'bold',
-          color: '#7c3aed',
-          textDecoration: 'none'
-        }}>
+    <nav className="bg-white border-b border-gray-200 px-5 sticky top-0 z-50">
+      <div className="max-w-[1200px] mx-auto flex justify-between items-center h-16">
+        <Link href="/" className="text-xl font-bold text-violet-600 no-underline">
           🚀 Debug Challenge
         </Link>
 
-        <div style={{
-          display: 'flex',
-          gap: '24px',
-          alignItems: 'center'
-        }}>
-          <Link href="/" style={{
-            color: '#4b5563',
-            textDecoration: 'none',
-            fontWeight: '500'
-          }}>Home</Link>
-          <Link href="/about" style={{
-            color: '#4b5563',
-            textDecoration: 'none',
-            fontWeight: '500'
-          }}>Over Ons</Link>
-          <Link href="/contact" style={{
-            color: '#4b5563',
-            textDecoration: 'none',
-            fontWeight: '500'
-          }}>Contact</Link>
+        <div className="flex gap-6 items-center">
+          <Link href="/" className="text-gray-600 no-underline font-medium hover:text-gray-900">Home</Link>
+          <Link href="/about" className="text-gray-600 no-underline font-medium hover:text-gray-900">Over Ons</Link>
+          <Link href="/contact" className="text-gray-600 no-underline font-medium hover:text-gray-900">Contact</Link>
         </div>
       </div>
     </nav>

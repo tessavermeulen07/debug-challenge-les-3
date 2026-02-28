@@ -1,98 +1,34 @@
 export default function AboutPage() {
   return (
-    <div style={{
-      maxWidth: '800px',
-      margin: '0 auto',
-      padding: '40px 20px'
-    }}>
-      <h1 style={{
-        fontSize: '36px',
-        fontWeight: 'bold',
-        marginBottom: '24px',
-        color: '#1a1a1a'
-      }}>Over Ons</h1>
+    <div className="max-w-[800px] mx-auto py-10 px-5">
+      <h1 className="text-4xl font-bold mb-6 text-[#1a1a1a]">Over Ons</h1>
 
-      <p style={{
-        fontSize: '18px',
-        lineHeight: '1.8',
-        color: '#444',
-        marginBottom: '20px'
-      }}>
+      <p className="text-lg leading-loose text-gray-600 mb-5">
         Wij zijn een team van gepassioneerde developers die geloven in de
         kracht van AI-assisted development. Onze missie is om het bouwen
         van websites sneller en toegankelijker te maken voor iedereen.
       </p>
 
-      <div style={{
-        display: 'flex',
-        gap: '20px',
-        marginTop: '40px',
-        flexWrap: 'wrap'
-      }}>
-        <div style={{
-          flex: '1',
-          minWidth: '250px',
-          padding: '24px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '12px',
-          border: '1px solid #e0e0e0'
-        }}>
-          <h3 style={{
-            fontSize: '20px',
-            fontWeight: '600',
-            marginBottom: '12px',
-            color: '#333'
-          }}>Onze Visie</h3>
-          <p style={{
-            color: '#666',
-            lineHeight: '1.6'
-          }}>
+      <div className="flex gap-5 mt-10 flex-wrap">
+        <div className="flex-1 min-w-[250px] p-6 bg-gray-50 rounded-xl border border-gray-200">
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">Onze Visie</h3>
+          <p className="text-gray-600 leading-relaxed">
             AI maakt development niet makkelijker — het maakt het SNELLER.
             Je moet nog steeds begrijpen wat je bouwt.
           </p>
         </div>
 
-        <div style={{
-          flex: '1',
-          minWidth: '250px',
-          padding: '24px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '12px',
-          border: '1px solid #e0e0e0'
-        }}>
-          <h3 style={{
-            fontSize: '20px',
-            fontWeight: '600',
-            marginBottom: '12px',
-            color: '#333'
-          }}>Ons Team</h3>
-          <p style={{
-            color: '#666',
-            lineHeight: '1.6'
-          }}>
+        <div className="flex-1 min-w-[250px] p-6 bg-gray-50 rounded-xl border border-gray-200">
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">Ons Team</h3>
+          <p className="text-gray-600 leading-relaxed">
             Vier developers, twee designers, en een AI die nooit slaapt.
             Samen bouwen we de toekomst.
           </p>
         </div>
 
-        <div style={{
-          flex: '1',
-          minWidth: '250px',
-          padding: '24px',
-          backgroundColor: '#f8f9fa',
-          borderRadius: '12px',
-          border: '1px solid #e0e0e0'
-        }}>
-          <h3 style={{
-            fontSize: '20px',
-            fontWeight: '600',
-            marginBottom: '12px',
-            color: '#333'
-          }}>Contact</h3>
-          <p style={{
-            color: '#666',
-            lineHeight: '1.6'
-          }}>
+        <div className="flex-1 min-w-[250px] p-6 bg-gray-50 rounded-xl border border-gray-200">
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">Contact</h3>
+          <p className="text-gray-600 leading-relaxed">
             Vragen? Neem contact op via ons contactformulier of stuur
             een mail naar info@debugchallenge.nl.
           </p>
